@@ -32,8 +32,8 @@ export class APIChartComponent {
     if (form.invalid) {
       return;
     }
-    this.service.addSymbol(form.value.symbol);
-    form.resetForm();
+    this.service.addSymbol(form.value.name);
+    // form.resetForm();
   }
 
   public chartOptions = {

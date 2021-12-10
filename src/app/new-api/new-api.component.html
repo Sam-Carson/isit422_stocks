@@ -1,13 +1,13 @@
 <div id="news">
-    <mat-toolbar color="primary">
-        <button mat-button (click)="sidenav.open ()" ><mat-icon>menu</mat-icon></button>
-        <span>News Headlines</span>  
+    <mat-toolbar>
+        <button mat-button (click)="sidenav.open ()" id="hamburger"><mat-icon>menu</mat-icon></button>
+        <span id="hero-title">News Headlines</span>  
         <span class="example-spacer"></span>
         <button mat-button [matMenuTriggerFor]="appMenu"><mat-icon>settings</mat-icon></button>
       </mat-toolbar>
       <mat-menu #appMenu="matMenu">
-        <button mat-menu-item> Settings </button>
-        <button mat-menu-item> Help </button>
+        <button mat-menu-item class="mat-menu-itm"> Settings </button>
+        <button mat-menu-item class="mat-menu-itm"> Help </button>
       </mat-menu>
       <mat-sidenav-container class="example-container">
       
@@ -22,24 +22,28 @@
               </mat-list-item>
           </mat-list>
         </mat-sidenav>
-        <mat-card class="example-card"  *ngFor="let article of mArticles">
-          <mat-card-header>
-            <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
-            <mat-card-title class="title">{{article.title}}</mat-card-title>
-            <mat-card-subtitle>{{article.source.name}}</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
-          <mat-card-content>
-            <p>
-              {{article.description}}
-            </p>
-          </mat-card-content>
-          <mat-card-actions class="action-buttons">
-            <!-- <button mat-button color="primary"><mat-icon>thumb_up_alt</mat-icon> 12 Likes</button>
-            <button mat-button color="primary"><mat-icon>comment</mat-icon> Comments</button>
-            <button mat-button color="primary"><mat-icon>share</mat-icon> Share</button> -->
-            <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
-          </mat-card-actions>
-        </mat-card>
+          <mat-card class="example-card"  *ngFor="let article of mArticles">
+            <a href={{article.url}} class="article-card">
+              <mat-card-header>
+                <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" class="example-header-image"></div>
+                <mat-card-title class="title">{{article.title}}</mat-card-title>
+                <mat-card-subtitle id="source-title">{{article.source.name}}</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+                <mat-card-content>
+                  <p id="article-description">
+                    {{article.description}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions class="action-buttons">
+                  <!-- <button mat-button color="primary"><mat-icon>thumb_up_alt</mat-icon> 12 Likes</button>
+                  <button mat-button color="primary"><mat-icon>comment</mat-icon> Comments</button>
+                  <button mat-button color="primary"><mat-icon>share</mat-icon> Share</button> -->
+                  <a mat-button id="moreBtn" href={{article.url}} target="_blank" ><mat-icon id="eyeBtn">visibility</mat-icon> More</a>
+                </mat-card-actions>
+            </a>
+            
+          </mat-card>
+        
       </mat-sidenav-container>
     </div>

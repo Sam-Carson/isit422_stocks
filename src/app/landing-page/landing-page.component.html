@@ -1,2 +1,22 @@
+<div>
+    <div class="hero-container">
+        <p>Welcome to</p>
+        <h1>.stock<span> _</span>watch</h1>
+    </div>
+    <div class="description-container">
+        <p class="description">StockWatch allows you to track your preferred stock listings to get the latest news updates and analytics. </p>
+            <br *ngIf="!loggedIn" /> 
+            <br/> 
+            <p *ngIf="!loggedIn">Create an account or <span class="login-link"><a routerLink="/login">login</a></span> to use all the features provided by StockWatch</p>
+    </div>
+    <div class="btn-container">
+        <button class="landingBtn" id="stockDataBtn" routerLink="/apichart">Stock Data</button>
+        <button class="landingBtn" id="stockWatchBtn" routerLink="/stockwatch">Stock Watch</button>
+    </div>
+    <div class="img-container">
+        <img class="stockIMG" src="../../assets/images/increasingSML.png" alt="Bar Graph">
+    </div>
+</div>
+
 
 

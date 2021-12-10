@@ -10,8 +10,7 @@ export class LogoutComponent implements OnInit {
   constructor() { }
 
   clearLoginData(): void {
-    sessionStorage.setItem('ID:', "" );
-    sessionStorage.setItem('Name:', "" );
+    sessionStorage.clear();
     window.location.href = '';
   }
 

@@ -1,0 +1,100 @@
+* {
+  background-color: transparent;
+}
+
+button {
+  background-color: #5f5b66;
+}
+
+body {
+  background-color: #28262c;
+}
+
+mat-toolbar {
+  background-color: #5f5b66;
+  justify-content: space-between;
+  border: 2px solid #5f5b66;
+  border-radius: 10px;
+}
+
+.mat-menu-itm {
+  background-color: #fff;
+}
+
+mat-icon {
+  background-color: #5f5b66;
+}
+
+.article-card {
+  text-decoration: none;
+  color: #00e5ff;
+}
+
+.title {
+  color: #fff;
+}
+
+.example-card {
+  margin: 2rem 1rem;
+  border: 1px solid #00e5ff;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #28262c;
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  box-shadow: 3px 3px 7px #5f5b66, inset 0px 1px 5px #5f5b66;
+}
+
+.example-sidenav {
+  background-color: #5f5b66;
+}
+
+.mat-button-wrapper {
+  background-color: #5f5b66;
+}
+
+.source-name {
+  color: #fff;
+  cursor: pointer;
+  transition: 300ms;
+  font-family: "Poppins", sans-serif;
+}
+.source-name:hover {
+  color: #00e5ff;
+}
+
+#article-description,
+#hero-title {
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  background-color: #5f5b66;
+}
+
+#article-description {
+  background-color: #28262c;
+}
+
+#eyeBtn {
+  background-color: #28262c;
+}
+
+#moreBtn {
+  color: #00e5ff;
+  background-color: #28262c;
+}
+
+#hamburger {
+  color: #00e5ff;
+  background-color: #5f5b66;
+}
+
+#source-title {
+  color: #00e5ff;
+  font-family: "Poppins", sans-serif;
+}
+
+#news {
+  width: 45vw;
+  margin-top: 5rem;
+  background-color: #28262c;
+}

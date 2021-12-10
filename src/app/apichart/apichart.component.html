@@ -1,5 +1,7 @@
 
 <div class='container'>
+
+  <app-watchlist></app-watchlist>
  
     <!-- <div class="card-body"><br /> -->
       <form (submit)="onAddWatchList(postForm)" 
@@ -12,9 +14,9 @@
               type="text" 
               placeholder="Search..." 
               list="searchresults" 
-              autofocus
-              #symbol="ngModel"/>
-      <button 
+              autofocus="all"
+              #symbol="ngModel">
+      <button class="addToListBtn"
         type="submit">Add to Watchlist
       </button>
       </form>

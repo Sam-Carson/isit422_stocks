@@ -1,14 +1,14 @@
-
-
-
-
-app-login {
+html,
+body {
+  height: 100vh;
   margin: 0;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #28262c;
 }
+
+router-outlet {
+  background-color: #28262c;
+}
+
 .header {
   margin: 2em;
 }
@@ -29,6 +29,7 @@ span {
   margin-top: 2em;
   width: fit-content;
   font-size: 2em;
+  color: #fff;
 }
 
 span span {
@@ -42,4 +43,31 @@ span span {
   display: flex;
   float: right;
   justify-content: space-between;
+}
+
+router-outlet {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: 100%;
+  /*min height is important. 
+   - use devtools to find the height
+  calc(100 viewport height - height of header - height of footer)*/
+}
+
+footer {
+  background-color: #5f5b66;
+  padding: 1.1rem 0;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  z-index: 10;
+}
+
+.footer-description {
+  color: #00e5ff;
+  font-size: 1em;
 }

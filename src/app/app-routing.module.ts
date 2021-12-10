@@ -13,10 +13,10 @@ import { StockWatchComponent } from './stock-watch/stock-watch.component';
 
 const routes: Routes = [
 
-  { path: '',   redirectTo: '/', pathMatch: 'full' },
+  { path: '',   redirectTo: '/landing-page', pathMatch: 'full' },
   { path: 'landing-page', component: LandingPageComponent },
   { path: 'login', component: LoginComponent },
-   { path: 'logout', component: LogoutComponent }, 
+   //{ path: 'logout', component: LogoutComponent }, 
    { path: 'apichart', component: APIChartComponent },
    { path: 'stockwatch', component: StockWatchComponent }
    

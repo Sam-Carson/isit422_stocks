@@ -1,0 +1,39 @@
+div {
+  margin-top: 80px;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+mat-card {
+  background-color: #28262c;
+  transition: 300ms;
+  padding: 1rem;
+  width: 10vw;
+  border: 1px solid #00b7cc;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #5f5b66, inset 0px 1px 5px #5f5b66;
+  margin: 0.8rem 0;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+mat-card:hover {
+  background-color: #5f5b66;
+}
+
+mat-card-title .delete {
+  float: right;
+  color: red;
+  font-size: 1rem;
+}
+
+mat-card-title button {
+  background-color: transparent;
+  border: none;
+}
+
+.watchlist-symbols {
+  color: #fff;
+}

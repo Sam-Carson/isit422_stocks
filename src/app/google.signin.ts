@@ -33,6 +33,7 @@ export class GoogleSigninComponent implements AfterViewInit {
       that.attachSignin(that.element.nativeElement.firstChild);
     });
   }
+
   public attachSignin(element: any) {
     let that = this;
     this.auth2.attachClickHandler(element, {},
@@ -49,7 +50,7 @@ export class GoogleSigninComponent implements AfterViewInit {
           // save 2 to this session's strorage
          sessionStorage.setItem('ID:', profile.getId() );
           sessionStorage.setItem('Name:', profile.getName() );
-        window.location.href = '/';
+        window.location.href = '/stockwatch';
 
 
       }, function (error: any) {

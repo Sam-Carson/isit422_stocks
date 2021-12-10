@@ -1,0 +1,88 @@
+.hero-container {
+  margin: 5rem auto 3rem auto;
+  padding: 2rem;
+  width: 80vw;
+}
+
+.hero-container p {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.hero-container h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.hero-container span {
+  color: #00e5ff;
+}
+
+.description-container {
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.btn-container {
+  margin: 0 auto;
+  width: 70vw;
+  text-align: center;
+  height: fit-content;
+}
+
+.landingBtn {
+  margin: 0 2rem;
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: #00e5ff;
+  background-color: #00e5ff;
+  color: #28262c;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  transition: 300ms;
+  box-shadow: 1px 3px 5px #5f5b66, inset 0px 1px 5px #5f5b66;
+}
+
+#stockDataBtn:hover {
+  background-color: #28262c;
+  color: #fff;
+}
+
+#stockWatchBtn {
+  background-color: #28262c;
+  color: #fff;
+}
+
+#stockWatchBtn:hover {
+  background-color: #00e5ff;
+  color: #28262c;
+}
+
+.login-link {
+  color: #00e5ff;
+  transition: 300ms;
+}
+
+.login-link:hover {
+  color: #00a4b8;
+  cursor: pointer;
+}
+
+.stockIMG {
+  width: 15rem;
+  height: 15rem;
+}
+
+.img-container {
+  width: fit-content;
+  height: fit-content;
+  margin: 3rem auto;
+}
