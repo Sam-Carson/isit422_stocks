@@ -1,16 +1,14 @@
 # Stocks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
-
 ## Before Opening The Project Add Updated List of Dependencies and run npm install. If npm doesn't work run npm ci 
 ### Install into the Stock Server with in ISIT422_stocks project
  npm i body-parser
  </br>
  npm install
  ### Install into project
- npm install --save @angular/animations
+  npm install @angular/cdk
  </br>
- npm install @angular/cdk
+ npm install --save @angular/animations
  </br>
  npm install ng2-charts@2.4.2 --save
  </br>
